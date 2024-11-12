@@ -19,3 +19,4 @@ public class Main {
         myMethod(i, arr);
     }
 }
+яненавижуинформатику
