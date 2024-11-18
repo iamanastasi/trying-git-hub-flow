@@ -1,0 +1,17 @@
+int max =0;
+        int l=arr.length;
+        for(int i=0;i<l;i++)
+        {
+            for(int j=0;j<l;j++)
+            {
+                if(j==0)
+                {
+                  max=arr[0][i];
+                }
+                if(arr[j][i]>max)
+                {
+                    max=arr[j][i];
+                }
+            }
+            System.out.print(max+" ");
+        }
