@@ -1,3 +1,4 @@
+int min =0;
 int max =0;
         int l=arr.length;
         for(int i=0;i<l;i++)
@@ -6,12 +7,20 @@ int max =0;
             {
                 if(j==0)
                 {
-                  max=arr[0][i];
+                  min=arr[i][0];
                 }
-                if(arr[j][i]>max)
+                if(arr[i][j]<min)
                 {
-                    max=arr[j][i];
+                    min=arr[i][j];
                 }
+}
+if(i==0)
+{
+max=min;
+}
+if (min>max)
+{
+max=min;
+}
             }
-            System.out.print(max+" ");
-        }
+            System.out.print(max);
